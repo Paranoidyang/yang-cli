@@ -1,0 +1,21 @@
+{
+  "name": "@yang-cli/utils",
+  "version": "1.0.0",
+  "description": "yang-cli utils",
+  "author": "paranoidyang <paranoidyang@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Run testing from utils\""
+  },
+  "dependencies": {
+  }
+}
