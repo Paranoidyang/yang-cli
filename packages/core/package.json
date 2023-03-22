@@ -6,6 +6,9 @@
   "homepage": "",
   "license": "ISC",
   "main": "lib/core.js",
+  "bin": {
+    "yang-cli": "bin/index.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,5 +22,6 @@
   "dependencies": {
     "@imooc-cli/utils": "^1.1.3",
     "@yang-cli-dev/utils": "^1.0.0"
-  }
+  },
+  "gitHead": "1273bd84a427866ac72da1c66ce251cb08dd7e6e"
 }
