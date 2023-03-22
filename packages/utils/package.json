@@ -1,6 +1,6 @@
 {
   "name": "@yang-cli/utils",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "yang-cli utils",
   "author": "paranoidyang <paranoidyang@163.com>",
   "homepage": "",
@@ -16,5 +16,5 @@
   "scripts": {
     "test": "echo \"Run testing from utils\""
   },
-  "gitHead": "1273bd84a427866ac72da1c66ce251cb08dd7e6e"
+  "gitHead": "ec2c43f46a74a5915e4ad8c5e363a73137c63ce4"
 }
