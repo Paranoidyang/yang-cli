@@ -1,6 +1,6 @@
 {
   "name": "@yang-cli/utils",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "yang-cli utils",
   "author": "paranoidyang <paranoidyang@163.com>",
   "homepage": "",
@@ -18,6 +18,6 @@
   },
   "gitHead": "ec2c43f46a74a5915e4ad8c5e363a73137c63ce4",
   "publishConfig": {
-    "access":"public"
+    "access": "public"
   }
 }
