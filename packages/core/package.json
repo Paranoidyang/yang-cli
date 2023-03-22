@@ -23,7 +23,7 @@
     "@imooc-cli/utils": "^1.1.3",
     "@yang-cli-dev/utils": "^1.0.0"
   },
-  "gitHead": "ec2c43f46a74a5915e4ad8c5e363a73137c63ce4",
+  "gitHead": "826d70e4dfa48b52adb2063dd8ec41f00d11a2e3",
   "publishConfig": {
     "access": "public"
   }
