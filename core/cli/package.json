@@ -20,7 +20,9 @@
     "test": "echo \"Run testing from core\""
   },
   "dependencies": {
-    "@yang-cli/utils": "file:../../utils/utils"
+    "@yang-cli/utils": "file:../../utils/utils",
+    "import-local": "^3.1.0",
+    "npmlog": "^7.0.1"
   },
   "gitHead": "826d70e4dfa48b52adb2063dd8ec41f00d11a2e3",
   "publishConfig": {
