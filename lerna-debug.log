@@ -1,21 +1,14 @@
 0 silly argv {
 0 silly argv   _: [ 'add' ],
 0 silly argv   globs: [],
-0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   lernaVersion: '6.6.1',
 0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\dist\\cli.js',
-0 silly argv   pkg: 'diff'
+0 silly argv   pkg: 'core/cli'
 0 silly argv }
-1 notice cli v6.5.1
+1 notice cli v6.6.1
 2 verbose rootPath D:\code\yang-cli
-3 error JSONError: Unexpected token "}" (0x7D) in JSON at position 418 while parsing near "...utils\": \"^1.0.0\",\n  }\n}\n" in packages\core\package.json
-3 error
-3 error [0m [90m 19 |[39m   [32m"dependencies"[39m[33m:[39m {[0m
-3 error [0m [90m 20 |[39m     [32m"@yang-cli-dev/utils"[39m[33m:[39m [32m"^1.0.0"[39m[33m,[39m[0m
-3 error [0m[31m[1m>[22m[39m[90m 21 |[39m   }[0m
-3 error [0m [90m    |[39m   [31m[1m^[22m[39m[0m
-3 error [0m [90m 22 |[39m }[0m
-3 error [0m [90m 23 |[39m[0m
-3 error
-3 error     at parseJson (D:\code\yang-cli\node_modules\.store\parse-json@5.2.0\node_modules\parse-json\index.js:29:21)
-3 error     at parse (D:\code\yang-cli\node_modules\.store\load-json-file@6.2.0\node_modules\load-json-file\index.js:15:9)
-3 error     at module.exports (D:\code\yang-cli\node_modules\.store\load-json-file@6.2.0\node_modules\load-json-file\index.js:18:47)
+3 warn EWORKSPACES Workspaces exist in the root package.json, but Lerna is not configured to use them.
+3 warn EWORKSPACES To fix this and have Lerna use workspaces to resolve packages, set `useWorkspaces: true` in lerna.json.
+4 error Error: An unknown git error occurred
+4 error     at makeError (D:\code\yang-cli\node_modules\.store\@npmcli+git@3.0.2\node_modules\@npmcli\git\lib\make-error.js:28:13)
+4 error     at D:\code\yang-cli\node_modules\.store\@npmcli+git@3.0.2\node_modules\@npmcli\git\lib\spawn.js:37:26

@@ -17,9 +17,16 @@ function core() {
   try {
     checkPkgVersion()
     checkNodeVersion()
+    checkRoot()
   }catch(e) {
     log.error(e.message)
   }
+}
+
+// 对root降级
+function checkRoot() {
+  const rootCheck = require('root-check')
+  rootCheck()
 }
 
 function checkNodeVersion() {
