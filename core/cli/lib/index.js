@@ -9,6 +9,9 @@ module.exports = core;
 // 其他任何文件都会被当做.js文件来解析，如果里面包含js代码就会被正常解析出来，所以也是可以获取.txt文件的， .txt -> .js
 const semver = require('semver')
 const colors = require('colors/safe')
+const userHome = require('user-home')
+// todo: 目前装的4.x版本的，最新版本的require会报错，后续看看解决方案
+const pathExists = require('path-exists').sync
 const log = require('@yang-cli/log')
 const pkg = require('../package.json')
 const constant = require('./const')
@@ -18,8 +21,16 @@ function core() {
     checkPkgVersion()
     checkNodeVersion()
     checkRoot()
+    checkUserHome()
   }catch(e) {
     log.error(e.message)
+  }
+}
+
+// 判断用户主目录
+function checkUserHome() {
+  if(!userHome || !pathExists(userHome)) {
+    throw new Error(colors.red('当前登录用户主目录不存在！'))
   }
 }
 

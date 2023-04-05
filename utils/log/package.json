@@ -30,6 +30,7 @@
     "url": "https://github.com/Paranoidyang/yang-cli/issues"
   },
   "dependencies": {
-    "npmlog": "^7.0.1"
+    "npmlog": "^7.0.1",
+    "undefined": "D:\\code\\yang-cli\\core\\cli"
   }
 }

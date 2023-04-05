@@ -19,5 +19,8 @@
   "gitHead": "826d70e4dfa48b52adb2063dd8ec41f00d11a2e3",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "undefined": "D:\\code\\yang-cli\\core\\cli"
   }
 }
