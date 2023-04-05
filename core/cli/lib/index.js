@@ -16,15 +16,36 @@ const log = require('@yang-cli/log')
 const pkg = require('../package.json')
 const constant = require('./const')
 
+let args
+
 function core() {
   try {
     checkPkgVersion()
     checkNodeVersion()
     checkRoot()
     checkUserHome()
+    checkInputArgs()
   }catch(e) {
     log.error(e.message)
   }
+}
+
+// 入参检查
+function checkInputArgs() {
+  const minimist = require('minimist')
+  args = minimist(process.argv.slice(2))
+  console.log(args)
+  checkArgs()
+}
+
+// 入参模式和debug模式开发
+function checkArgs() {
+  if(args.debug) {
+    process.env.LOG_LEVEL = 'verbose'
+  }else {
+    process.env.LOG_LEVEL = 'info'
+  }
+  log.level = process.env.LOG_LEVEL
 }
 
 // 判断用户主目录
