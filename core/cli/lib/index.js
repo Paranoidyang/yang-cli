@@ -7,6 +7,7 @@ module.exports = core;
 // .json -> JSON.parse
 // .node -> c++
 // 其他任何文件都会被当做.js文件来解析，如果里面包含js代码就会被正常解析出来，所以也是可以获取.txt文件的， .txt -> .js
+const path = require('path')
 const semver = require('semver')
 const colors = require('colors/safe')
 const userHome = require('user-home')
@@ -16,7 +17,7 @@ const log = require('@yang-cli/log')
 const pkg = require('../package.json')
 const constant = require('./const')
 
-let args
+let args, config
 
 function core() {
   try {
@@ -25,9 +26,36 @@ function core() {
     checkRoot()
     checkUserHome()
     checkInputArgs()
+    checkEnv()
   }catch(e) {
     log.error(e.message)
   }
+}
+
+// 检查环境变量
+function checkEnv() {
+  const dotenv = require('dotenv')
+  const dotenvPath = path.resolve(userHome, '.env')
+  if(pathExists(dotenvPath)) {
+    dotenv.config({ //将.env文件的内容配置到process.env中
+      path: dotenvPath
+    })
+  }
+  createDefaultConfig()
+  log.verbose('环境变量', process.env.CLI_HOME_PATH)
+}
+
+// 创建cli默认配置
+function createDefaultConfig() {
+  const cliConfig = {
+    home: userHome
+  }
+  if(process.env.CLI_HOME) {
+    cliConfig['cliHome'] = path.join(userHome, process.env.CLI_HOME)
+  }else {
+    cliConfig['cliHome'] = path.join(userHome, constant.DEFAULT_CLI_HOME)
+  }
+  process.env.CLI_HOME_PATH = cliConfig.cliHome
 }
 
 // 入参检查
