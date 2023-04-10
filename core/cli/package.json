@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@yang-cli/log": "file:../../utils/log",
+    "@yang-cli/get-npm-info": "file:../../utils/get-npm-info",
     "@yang-cli/utils": "file:../../utils/utils",
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",

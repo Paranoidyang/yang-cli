@@ -1,14 +1,10 @@
-0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   globs: [],
-0 silly argv   lernaVersion: '6.6.1',
-0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\dist\\cli.js',
-0 silly argv   pkg: 'core/cli'
-0 silly argv }
-1 notice cli v6.6.1
-2 verbose rootPath D:\code\yang-cli
-3 warn EWORKSPACES Workspaces exist in the root package.json, but Lerna is not configured to use them.
-3 warn EWORKSPACES To fix this and have Lerna use workspaces to resolve packages, set `useWorkspaces: true` in lerna.json.
-4 error Error: An unknown git error occurred
-4 error     at makeError (D:\code\yang-cli\node_modules\.store\@npmcli+git@3.0.2\node_modules\@npmcli\git\lib\make-error.js:28:13)
-4 error     at D:\code\yang-cli\node_modules\.store\@npmcli+git@3.0.2\node_modules\@npmcli\git\lib\spawn.js:37:26
+24 error TypeError: Cannot set properties of null (setting 'peer')
+24 error     at visit (D:\code\yang-cli\node_modules\.store\@npmcli+arborist@6.2.3\node_modules\@npmcli\arborist\lib\calc-dep-flags.js:104:54)
+24 error     at visitNode (D:\code\yang-cli\node_modules\.store\treeverse@3.0.0\node_modules\treeverse\lib\depth-descent.js:58:25)
+24 error     at next (D:\code\yang-cli\node_modules\.store\treeverse@3.0.0\node_modules\treeverse\lib\depth-descent.js:44:19)
+24 error     at depth (D:\code\yang-cli\node_modules\.store\treeverse@3.0.0\node_modules\treeverse\lib\depth-descent.js:83:10)
+24 error     at depth (D:\code\yang-cli\node_modules\.store\treeverse@3.0.0\node_modules\treeverse\lib\depth.js:27:12)
+24 error     at unsetFlag (D:\code\yang-cli\node_modules\.store\@npmcli+arborist@6.2.3\node_modules\@npmcli\arborist\lib\calc-dep-flags.js:99:5)
+24 error     at D:\code\yang-cli\node_modules\.store\@npmcli+arborist@6.2.3\node_modules\@npmcli\arborist\lib\calc-dep-flags.js:65:7
+24 error     at Map.forEach (<anonymous>)
+24 error     at calcDepFlagsStep (D:\code\yang-cli\node_modules\.store\@npmcli+arborist@6.2.3\node_modules\@npmcli\arborist\lib\calc-dep-flags.js:41:17)
