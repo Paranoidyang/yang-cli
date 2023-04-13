@@ -20,10 +20,11 @@
     "test": "echo \"Run testing from core\""
   },
   "dependencies": {
-    "@yang-cli/log": "file:../../utils/log",
     "@yang-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "@yang-cli/log": "file:../../utils/log",
     "@yang-cli/utils": "file:../../utils/utils",
     "colors": "^1.4.0",
+    "commander": "^10.0.0",
     "dotenv": "^16.0.3",
     "import-local": "^3.1.0",
     "minimist": "^1.2.8",
